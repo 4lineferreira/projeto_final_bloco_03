@@ -11,7 +11,7 @@ function Home() {
                             Seja Bem vinde!
                         </h2>
                         <p className='text-xl'>
-                            Sua farmácia da Marcia!
+                            Sua farmácia só que da Marcia!
                         </p>
 
                         
