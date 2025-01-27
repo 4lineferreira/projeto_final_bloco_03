@@ -59,24 +59,24 @@ function FormCategoria() {
 
     return (
         <div className="container flex flex-col items-center justify-center mx-auto py-8">
-            <h1 className="text-4xl text-center my-8 font-major-mono text-emerald-600">
+            <h1 className="text-4xl text-center my-8 font-major-mono text-teal-900">
                 {id === undefined ? 'Cadastrar Tema' : 'Editar Tema'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
                 <div className="flex flex-col gap-2 font-major-mono">
-                    <label htmlFor="descricao" className="text-xl text-emerald-600 font-semibold">Descrição da Categoria</label>
+                    <label htmlFor="descricao" className="text-xl text-teal-900 font-semibold">Descrição da Categoria</label>
                     <input
                         type="text"
                         placeholder="Descreva aqui seu tema"
                         name="descricao"
-                        className="border-2 border-emerald-400 rounded p-3 text-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        className="border-2 border-teal-900 rounded p-3 text-lg focus:outline-none focus:ring-2 focus:ring-teal-300"
                         value={categoria.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
                 <button
-                    className="rounded text-white font-major-mono bg-emerald-500 hover:bg-emerald-700 w-1/2 py-2 mx-auto flex justify-center transition-colors"
+                    className="rounded text-white font-major-mono bg-teal-900 hover:bg-teal-300 w-1/2 py-2 mx-auto flex justify-center transition-colors"
                     type="submit"
                 >
                     {isLoading ?
